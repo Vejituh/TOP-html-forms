@@ -166,3 +166,21 @@ nav ul {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.75);
   margin-bottom: 20px;
 }
+
+/*** FOOTER ***/
+footer {
+  margin: auto;
+  padding: 20px 30px;
+  text-align: center;
+  color: #505050;
+  line-height: 1.5;
+  font-size: 0.7em;
+}
+footer ul{
+  display: flex;
+  justify-content: center;
+}
+footer ul li {
+  padding: 0 10px;
+  cursor: pointer;
+}
