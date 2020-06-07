@@ -47,9 +47,26 @@ table {
 body {
   background-color: #eceef1;
 }
-
+.button{
+  box-sizing: border-box;
+  background: #0077c5;
+  border: 1px solid #4c4c4c;
+  border-color: #0077c5;
+  border-radius: 4px;
+  color: white;
+  font-weight: normal;
+  font-size: 1em;
+  text-align: center;
+  cursor: pointer;
+  line-height: 2em;
+  padding: 5px 20px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.75);
+  margin: 0 10px;
+  text-decoration: none;
+}
 /*** NAV ***/
 nav {
+  margin: 20px 20px;
   height: 40px;
   display: none;
 }
@@ -57,6 +74,15 @@ nav ul {
   display: flex;
   justify-content: flex-end;
   width: 100%;
+}
+nav ul li {
+  font-size: 0.84em;
+  font-weight: 300;
+}
+nav ul li a {
+  font-size: 0.8em;
+  color: #0077c5;
+  text-decoration: none;
 }
 
 /*** Mobile Header ***/
@@ -183,4 +209,34 @@ footer ul{
 footer ul li {
   padding: 0 10px;
   cursor: pointer;
+}
+
+@media only screen and (min-width: 600px) {
+  nav {
+    display: flex;
+  }
+  .form-section {
+    width: 43%;
+  }
+  .mobile-header {
+    text-align: center;
+  }
+  .mobile-header ul {
+    width: 50%;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .form-section {
+    width: 23%;
+  }
+  .submit-button {
+    height: 42px;
+    font-size: 1em;
+  }
+  .mobile-header ul {
+    width: 25%;
+    margin: auto;
+  }
 }
